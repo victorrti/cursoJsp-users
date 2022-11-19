@@ -28,7 +28,7 @@
                                     <!-- Page-body start -->
                                     <div class="page-body">
                                         <div class="row">
-                                           <h4>TESTE</h4>
+                                           <h4>Conteudo pagina base das paginas do sistema</h4>
                                         </div>
                                     </div>                                   
                                 </div>
