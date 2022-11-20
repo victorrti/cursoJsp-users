@@ -36,12 +36,14 @@ public class ServletUsuarioController extends HttpServlet {
 				ModelLogin modelLogin = new ModelLogin();
 				
 				modelLogin.setId(id != null && !id.isEmpty() ? Long.parseLong(id): null);
-				modelLogin.setLogin(email);
+				modelLogin.setEmail(email);
 				modelLogin.setNome(nome);
 				modelLogin.setPassword(password);
 				modelLogin.setLogin(login);
+				request.setAttribute("modelLogin", modelLogin);
 				
 				RequestDispatcher redireciona = request.getRequestDispatcher("principal/usuario.jsp");
+				
 				redireciona.forward(request, response);
 	}
 
