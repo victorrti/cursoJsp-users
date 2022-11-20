@@ -32,31 +32,44 @@
 											<div class="col-sm-12">
 												<!-- Basic Form Inputs card start -->
 												<div class="card">
-													<div class="card-header">
-														<h5>Basic Form Inputs</h5>
-														<span>Add class of <code>.form-control</code> with
-															<code>&lt;input&gt;</code> tag
-														</span>
-													</div>
-													<div class="card-block">
-														<h4 class="sub-title">Basic Inputs</h4>
-														<form>
-															<div class="form-group row">
-															   <label class="col-sm-1 col-form-label">ID</label>
-																<div class="col-sm-2">
-																	<input type="text" class="form-control"
-																		placeholder="ID">
-																</div>
-																 <label class="col-sm-1 col-form-label">Nome</label>
-																<div class="col-sm-6">
-																	<input type="text" class="form-control"
-																		placeholder="Nome">
-																</div>
-															</div>
-														</form>
-													</div>
-												</div>
-											</div>
+													
+													<div class="card-block">														
+														<form class="form-material" action="<%=request.getContextPath() %>/ServletUsuarioController" method="post">
+                                                            <div class="form-group form-default">
+                                                                <input type="text" name="id" id="id" class="form-control" readonly="readonly">
+                                                                <span class="form-bar"></span>
+                                                                <label class="float-label">ID:</label>
+                                                            </div>
+                                                            <div class="form-group form-default">
+                                                                <input type="text" name="login" id="login" class="form-control" required="required">
+                                                                <span class="form-bar"></span>
+                                                                <label class="float-label">Login</label>
+                                                            </div>
+                                                             <div class="form-group form-default">
+                                                                <input type="text" name="nome" id="nome" class="form-control" required="required">
+                                                                <span class="form-bar"></span>
+                                                                <label class="float-label">Nome:</label>
+                                                            </div>
+                                                            <div class="form-group form-default">
+                                                                <input type="email" name="email" id="email" class="form-control" required="required" autocomplete="off">
+                                                                <span class="form-bar"></span>
+                                                                <label class="float-label">Email:</label>
+                                                            </div>
+                                                            <div class="form-group form-default">
+                                                                <input type="password" name="password" id="password"class="form-control" required="required" autocomplete="off">
+                                                                <span class="form-bar"></span>
+                                                                <label class="float-label">Password</label>
+                                                            </div>
+                                                           
+                                                           <div >
+                                                         <button class="btn btn-success waves-effect waves-light">Novo</button>
+                                                         <button class="btn btn-primary waves-effect waves-light">Salvar</button>
+                                                         <button class="btn btn-danger waves-effect waves-light">Excluir</button>
+                                                         </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>                              
 
 										</div>
 									</div>
